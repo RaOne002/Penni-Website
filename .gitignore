@@ -41,6 +41,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Ignore Todo.md files
-/Todo.md
-/.Todo.md
-.Todo.md
+src/Todo.md
