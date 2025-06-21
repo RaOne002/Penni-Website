@@ -3,6 +3,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --Zinc-300: #d4d4d8;
+  --Zinc-100: #efefef;
+
+  --Blue-500: #408dfe;
+  --Blue-400: #78a8ee;
+  --Blue-300: #90bdff;
+
+  --Neutral-500: #646363;
+  --Neutral-550: #838383;
+  --Neutral-800: #323131;
+  --Neutral-300: #d9d9d9;
+  --Neutral-350: #d1d1d1;
+  --Neutral-600: #626262;
+  --Neutral-400: #9f9f9f;
+  --Neutral-450: #b3b3b3;
+  --Neutral-850: #262626;
+
+  --Gray-200: #edeef3;
+  --Gray-100: #eeeff4;
+  --Gray-150: #f5f6fa;
+
+  --White: #ffffff;
+
+  --Emerald-400: #03d89f;
+
+  --Violet-50: #f2f0fa;
 }
 
 @theme inline {
@@ -22,5 +49,86 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Trap, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 120px 1fr 160px;
+  align-items: center;
+  background: #262626;
+  padding: 18px 40px;
+  font-family: 'Inter', Arial, sans-serif;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  justify-self: start;
+  position: relative;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #60aaff;
+}
+
+.navbar-btn {
+  background: #4d97ff;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  justify-self: end;
+}
+
+.navbar-btn:hover {
+  background: #357ae8;
+}
+
+/* Backgrounds */
+.penny-bg {
+  background-image: url('/penny_background.svg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+/* Backgrounds For Navbar */
+#penny-bgNav {
+  background-image: url('/penny_bgNav.svg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+/* Hide scrollbar on all screens */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* globals.css or your relevant CSS file */
+.faq-questionSection {
+  @apply self-stretch py-8 pl-7 mt-6 bg-slate-100 min-h-[100px] rounded-[80px] max-md:pl-5 max-md:max-w-full;
 }
