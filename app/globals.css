@@ -4,54 +4,69 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --Zinc-300: #d4d4d8;
-  --Zinc-100: #efefef;
+  --myzinc-300: #d4d4d8;
+  --myzinc-100: #efefef;
 
-  --Blue-500: #408dfe;
-  --Blue-400: #78a8ee;
-  --Blue-300: #90bdff;
+  --myblue-500: #408dfe;
+  --myblue-400: #78a8ee;
+  --myblue-300: #90bdff;
 
-  --Neutral-500: #646363;
-  --Neutral-550: #838383;
-  --Neutral-800: #323131;
-  --Neutral-300: #d9d9d9;
-  --Neutral-350: #d1d1d1;
-  --Neutral-600: #626262;
-  --Neutral-400: #9f9f9f;
-  --Neutral-450: #b3b3b3;
-  --Neutral-850: #262626;
+  --myneutral-500: #646363;
+  --myneutral-550: #838383;
+  --myneutral-800: #323131;
+  --myneutral-300: #d9d9d9;
+  --myneutral-350: #d1d1d1;
+  --myneutral-600: #626262;
+  --myneutral-400: #9f9f9f;
+  --myneutral-450: #b3b3b3;
+  --myneutral-850: #262626;
 
-  --Gray-200: #edeef3;
-  --Gray-100: #eeeff4;
-  --Gray-150: #f5f6fa;
+  --mygray-200: #edeef3;
+  --mygray-100: #eeeff4;
+  --mygray-150: #f5f6fa;
 
-  --White: #ffffff;
+  --mywhite: #ffffff;
 
-  --Emerald-400: #03d89f;
+  --myemerald-400: #03d89f;
 
-  --Violet-50: #f2f0fa;
+  --myviolet-50: #f2f0fa;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* Defined Custom Colors */
+  --color-myzinc-300: var(--myzinc-300);
+  --color-myzinc-100: var(--myzinc-100);
+  --color-myblue-500: var(--myblue-500);
+  --color-myblue-400: var(--myblue-400);
+  --color-myblue-300: var(--myblue-300);
+  --color-myneutral-500: var(--myneutral-500);
+  --color-myneutral-550: var(--myneutral-550);
+  --color-myneutral-800: var(--myneutral-800);
+  --color-myneutral-300: var(--myneutral-300);
+  --color-myneutral-350: var(--myneutral-350);
+  --color-myneutral-600: var(--myneutral-600);
+  --color-myneutral-400: var(--myneutral-400);
+  --color-myneutral-450: var(--myneutral-450);
+  --color-myneutral-850: var(--myneutral-850);
+  --color-mygray-200: var(--mygray-200);
+  --color-mygray-100: var(--mygray-100);
+  --color-mygray-150: var(--mygray-150);
+  --color-mywhite: var(--mywhite);
+  --color-myemerald-400: var(--myemerald-400);
+  --color-myviolet-50: var(--myviolet-50);
+
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Trap, -apple-system, Roboto, Helvetica, sans-serif;
-}
-
+/* 
+  ****************** Navbar.tsx Styles ******************
+*/
 .navbar {
   display: grid;
   grid-template-columns: 120px 1fr 160px;
