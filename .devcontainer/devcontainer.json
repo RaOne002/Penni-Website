@@ -1,0 +1,34 @@
+{
+    "name": "Dev Container With:  Node.js, Npm, Yarn, Pnpm Typescript-tsc",
+    "image": "mcr.microsoft.com/devcontainers/base:0-ubuntu",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "bradlc.vscode-tailwindcss",
+                "firsttris.vscode-jest-runner",
+                "postman.postman",
+                "ms-vscode.vscode-node-azure-pack",
+                "ms-vscode.vscode-typescript-tslint-plugin",
+                "formulahendry.auto-close-tag",
+                "dbaeumer.vscode-eslint",
+                "formulahendry.auto-rename-tag",
+                "eamodio.gitlens",
+                "styled-components.vscode-styled-components",
+                "hbenl.vscode-mocha-test-adapter",
+                "esbenp.prettier-vscode",
+                "orta.vscode-jest"
+            ]
+        }
+    },
+    "forwardPorts": [
+        3000,
+        3001
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "postCreateCommand": "npm install -g typescript"
+}
