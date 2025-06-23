@@ -7,25 +7,25 @@ const cards = [
     {
         // title: "Debt Consolidation",
         buttonText: "Debt Consolidation",
-        imageSrc: "/your-image1.jpg",
+        imageSrc: "",
         imageAlt: "Debt Consolidation",
     },
     {
         // title: "Another Solution",
         buttonText: "Another Solution",
-        // imageSrc: "/your-image2.jpg",
+        imageSrc: "",
         imageAlt: "Another Solution",
     },
     {
         // title: "More Options",
         buttonText: "More Options",
-        imageSrc: "/your-image3.jpg",
+        imageSrc: "",
         imageAlt: "More Options",
     },
     {
         // title: "See All",
         buttonText: "See All",
-        imageSrc: "/your-image4.jpg",
+        imageSrc: "",
         imageAlt: "See All",
     },
 ];
