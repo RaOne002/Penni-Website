@@ -2,7 +2,8 @@
 
 import React from 'react';
 import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg'; 
-import PennyFlowerSvg from '../svg/PennyFlowerSvg'; 
+import PennyFlowerSvg1 from '../svg/PennyFlowerSvg1'; 
+import PennyFlowerSvg2 from '../svg/PennyFlowerSvg2'; 
 import MyButton from '../ui/MyButton';
 
 export default function LoanOffersSection() {
@@ -14,14 +15,13 @@ export default function LoanOffersSection() {
           aria-label="Background"
         />
         {/* Top-left flower */}
-        <img
-          src="/penny-flower.svg"
-          alt="Flower"
-          className="absolute left-[565px] top-[34px] w-[110px] z-10"
+        <PennyFlowerSvg1
+          className="absolute left-[565px] top-[34px] z-10"
+          aria-label="Flower"
         />
         {/* Bottom-right flower */}
-        <PennyFlowerSvg
-          className="absolute right-[50px] bottom-[50px] w-[100px] z-10"
+        <PennyFlowerSvg2
+          className="absolute right-[50px] bottom-[50px] z-10"
           aria-label="Flower"
         />
         {/* Left: Media Placeholder */}
