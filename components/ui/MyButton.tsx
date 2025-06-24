@@ -14,10 +14,10 @@ export default function MyButton({
   children = "Click here",
   onClick,
   className = "",
-  bgColor = "bg-blue-500",
-  hoverBgColor = "hover:bg-blue-600",
-  textColor = "text-white",
-  iconBgColor = "bg-neutral-900",
+  bgColor = "bg-myblue-500",
+  hoverBgColor = "hover:bg-mysky-800",
+  textColor = "text-mywhite",
+  iconBgColor = "bg-myneutral-850",
 }: buttonProps) {
   return (
     <button
@@ -26,9 +26,9 @@ export default function MyButton({
     >
       <p className="pr-4">{children}</p>
       <span className={`flex items-center justify-center ${iconBgColor} rounded-full w-15 h-10`}>
-        <svg width="30" height="30" fill="none" stroke="#fff" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-          <line x1="0" y1="17.5" x2="27" y2="17.5" />
-          <polyline points="20 11 27 17.5 20 24" />
+        <svg width="30" height="30" fill="none" stroke="var(--mywhite)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="0" y1="15" x2="27" y2="15" />
+          <polyline points="23 8 30 15 23 22" />
         </svg>
       </span>
     </button>

@@ -30,6 +30,8 @@
   --myemerald-400: #03d89f;
 
   --myviolet-50: #f2f0fa;
+
+  --mysky-800: #1e54a4;
 }
 
 @theme inline {
@@ -57,6 +59,7 @@
   --color-mywhite: var(--mywhite);
   --color-myemerald-400: var(--myemerald-400);
   --color-myviolet-50: var(--myviolet-50);
+  --color-mysky-800: var(--mysky-800);
 
   /* Fonts */
   --font-sans: var(--font-geist-sans);

@@ -1,16 +1,17 @@
 "use client";
 
 import React from 'react';
+import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
+// import PennyFlowerSvg from '../svg/PennyFlowerSvg';  
 import MyButton from '../ui/MyButton';
 
 export default function PersonalizedOffersSection() {
   return (
     <section className="rounded-3xl p-3 bg-neutral-800 w-full max-w-[1500px]">
       <div className="relative flex flex-row items-stretch rounded-2xl min-h-[700px] overflow-hidden">
-        <img
-          src="/penny-bgWhite.svg"
+        <PennyBgWhiteSvg
           className="object-cover absolute inset-0 size-full"
-          alt="Background"
+          aria-label="Background"
         />
         {/* Top-left flower */}
         <img

@@ -1,20 +1,20 @@
 "use client";
 
 import React from 'react';
+import FooterBgSvg from '../svg/FooterBgSvg'
+import PennyHalfFlowerSvg from '../svg/PennyHalfFlowerSvg'
 
 export default function Footer() {
   return (
     <footer className="flex relative flex-col items-center self-stretch px-16 pt-64 pb-16 w-full min-h-[600px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
-      <img
-        src="/penny_background.svg"
+      <FooterBgSvg
         className="object-cover absolute inset-0 size-full"
-        alt="Footer background"
+        aria-label="Footer background"
       />
       {/* Top-right flower */}
-      <img
-        src="/penny-halfFlower.svg"
-        alt="Flower"
+      <PennyHalfFlowerSvg
         className="absolute right-[0px] top-[70px] w-[110px] z-10"
+        aria-label="Half Flower"
       />
       <div className="flex relative flex-col w-full max-w-[1602px] max-md:max-w-full">
         <div className="self-end mr-10 max-w-full w-[948px] max-md:mr-2.5">

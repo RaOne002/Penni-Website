@@ -1,16 +1,17 @@
 "use client";
 
 import React from 'react';
+import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg'; 
+import PennyFlowerSvg from '../svg/PennyFlowerSvg'; 
 import MyButton from '../ui/MyButton';
 
 export default function LoanOffersSection() {
   return (
     <section className="rounded-3xl p-3 bg-neutral-800 w-full max-w-[1500px]">
       <div className="relative flex flex-row items-stretch rounded-2xl min-h-[680px] overflow-hidden">
-        <img
-          src="/penny-bgWhite.svg"
+        <PennyBgWhiteSvg
           className="object-cover absolute inset-0 size-full"
-          alt="Background"
+          aria-label="Background"
         />
         {/* Top-left flower */}
         <img
@@ -19,10 +20,9 @@ export default function LoanOffersSection() {
           className="absolute left-[565px] top-[34px] w-[110px] z-10"
         />
         {/* Bottom-right flower */}
-        <img
-          src="/penny-flower.svg"
-          alt="Flower"
+        <PennyFlowerSvg
           className="absolute right-[50px] bottom-[50px] w-[100px] z-10"
+          aria-label="Flower"
         />
         {/* Left: Media Placeholder */}
         <div className="flex-1 flex items-center justify-center z-9">

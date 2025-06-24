@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg'; 
 import MyButton from '../ui/MyButton';
 // import Card from '../ui/Card';
 import CardCarousel from '../ui/CardCarousel';
@@ -9,10 +10,9 @@ export default function DebtSolutionsSection() {
   return (
     <section className="overflow-hidden mt-15 w-full rounded-3xl bg-neutral-800 max-w-[1500px] max-md:mt-10 max-md:max-w-full">
       <div className="flex relative flex-col px-16 py-12 w-full min-h-[680px] max-md:px-5 max-md:max-w-full">
-        <img
-          src="/penny-bgWhite.svg"
+        <PennyBgWhiteSvg
           className="object-cover absolute inset-0 size-full"
-          alt="Background"
+          aria-label="Background"
         />
         <div className="flex relative flex-wrap gap-5 justify-between w-full font-medium max-md:mr-2.5 max-md:max-w-full">
           <h2 className="text-6xl leading-none text-white max-md:max-w-full max-md:text-4xl">
