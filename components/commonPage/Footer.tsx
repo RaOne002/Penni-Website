@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="shrink-0 mt-72 h-px border border-white border-solid max-md:mt-10 max-md:max-w-full" />
-        <div className="mt-7 flex flex-wrap gap-x-12 gap-y-4 text-xl font-medium text-neutral-300 max-md:max-w-full">
+        <div className="mt-7 flex flex-wrap gap-x-11 gap-y-4 text-xl font-medium text-neutral-300 max-md:max-w-full">
           <a href="#" className="hover:underline">Terms Of Service</a>
           <a href="#" className="hover:underline">Privacy Policy</a>
           <a href="#" className="hover:underline">Advertiser Disclosure</a>

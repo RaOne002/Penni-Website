@@ -4,26 +4,27 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --myzinc-300: #d4d4d8;
   --myzinc-100: #efefef;
+  --myzinc-300: #d4d4d8;
 
-  --myblue-500: #408dfe;
-  --myblue-400: #78a8ee;
   --myblue-300: #90bdff;
+  --myblue-400: #78a8ee;
+  --myblue-500: #408dfe;
 
-  --myneutral-500: #646363;
-  --myneutral-550: #838383;
-  --myneutral-800: #323131;
   --myneutral-300: #d9d9d9;
   --myneutral-350: #d1d1d1;
-  --myneutral-600: #626262;
   --myneutral-400: #9f9f9f;
   --myneutral-450: #b3b3b3;
+  --myneutral-475: #a9a9a9;
+  --myneutral-500: #646363;
+  --myneutral-550: #838383;
+  --myneutral-600: #626262;
+  --myneutral-800: #323131;
   --myneutral-850: #262626;
 
-  --mygray-200: #edeef3;
   --mygray-100: #eeeff4;
   --mygray-150: #f5f6fa;
+  --mygray-200: #edeef3;
 
   --mywhite: #ffffff;
 
@@ -32,6 +33,8 @@
   --myviolet-50: #f2f0fa;
 
   --mysky-800: #1e54a4;
+
+  --myblack-800: #000000;
 }
 
 @theme inline {
@@ -52,6 +55,7 @@
   --color-myneutral-600: var(--myneutral-600);
   --color-myneutral-400: var(--myneutral-400);
   --color-myneutral-450: var(--myneutral-450);
+  --color-myneutral-475: var(--myneutral-475);
   --color-myneutral-850: var(--myneutral-850);
   --color-mygray-200: var(--mygray-200);
   --color-mygray-100: var(--mygray-100);
@@ -60,6 +64,7 @@
   --color-myemerald-400: var(--myemerald-400);
   --color-myviolet-50: var(--myviolet-50);
   --color-mysky-800: var(--mysky-800);
+  --color-myblack-800: var(--myblack-800);
 
   /* Fonts */
   --font-sans: var(--font-geist-sans);

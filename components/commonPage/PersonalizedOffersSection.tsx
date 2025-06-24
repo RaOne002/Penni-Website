@@ -34,11 +34,11 @@ export default function PersonalizedOffersSection() {
             For all financial situations regardless<br /> of credit score or income
           </p>
           <MyButton
-            bgColor="bg-white"
-            hoverBgColor="hover:bg-zinc-300"
-            textColor="text-black"
-            iconBgColor="bg-blue-500"
-            className='z-10 w-55'
+            bgColor="bg-mywhite"
+            hoverBgColor="hover:bg-myneutral-475"
+            textColor="text-myblack"
+            iconBgColor="bg-myblue-500"
+            className='z-10 w-56'
           >
             visit our offers
           </MyButton>

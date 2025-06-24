@@ -3,8 +3,8 @@
 import React from 'react';
 import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg'; 
 import MyButton from '../ui/MyButton';
-// import Card from '../ui/Card';
-import CardCarousel from '../ui/CardCarousel';
+import Card from '../ui/Card';
+// import CardCarousel from '../ui/CardCarousel';
 
 export default function DebtSolutionsSection() {
   return (
@@ -21,25 +21,25 @@ export default function DebtSolutionsSection() {
           {/* Desktop: show in header */}
           <div className="hidden md:block">
             <MyButton
-              bgColor="bg-white"
-              hoverBgColor="hover:bg-zinc-300"
-              textColor="text-black"
-              iconBgColor="bg-blue-500"
+              bgColor="bg-mywhite"
+              hoverBgColor="hover:bg-myneutral-475"
+              textColor="text-myblack"
+              iconBgColor="bg-myblue-500"
             >
               Learn more
             </MyButton>
           </div>  
         </div>
         <div className="relative mt-11 ml-3 max-md:mt-10 max-md:max-w-full">
-          <CardCarousel />
+          <Card  />
         </div>
         {/* Mobile: show at bottom */}
-          <div className="block md:hidden mt-8 w-full flex justify-center ">
+          <div className="md:hidden mt-8 w-full flex justify-center z-10">
             <MyButton
-              bgColor="bg-white"
-              hoverBgColor="hover:bg-zinc-300"
-              textColor="text-black"
-              iconBgColor="bg-blue-500"
+              bgColor="bg-mywhite"
+              hoverBgColor="hover:bg-myneutral-475"
+              textColor="text-myblack"
+              iconBgColor="bg-myblue-500"
             >
               Learn more
             </MyButton>
