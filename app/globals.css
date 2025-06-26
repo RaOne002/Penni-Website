@@ -29,6 +29,7 @@
   --mygray-100: #eeeff4;
   --mygray-150: #f5f6fa;
   --mygray-200: #edeef3;
+  --mygray-500: #7a7676;
 
   --mywhite: #ffffff;
 
@@ -70,6 +71,7 @@
   --color-mygray-200: var(--mygray-200);
   --color-mygray-100: var(--mygray-100);
   --color-mygray-150: var(--mygray-150);
+  --color-mygray-500: var(--mygray-500);
   --color-mywhite: var(--mywhite);
   --color-myemerald-400: var(--myemerald-400);
   --color-myviolet-50: var(--myviolet-50);

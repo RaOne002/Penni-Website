@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => (
     <ul className="flex gap-9 list-none m-0 p-0 justify-center">
       <li className="relative group">
   <a
-    href="#"
+    href="./"
     className="text-mywhite font-semibold no-underline text-base transition-colors duration-200 hover:text-myblue-500"
   >
     Products
