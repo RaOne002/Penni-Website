@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -5,6 +6,7 @@
   --foreground: #171717;
 
   --myzinc-100: #efefef;
+  --myzinc-200: #8c8c8c;
   --myzinc-300: #d4d4d8;
 
   --myblue-300: #90bdff;
@@ -19,8 +21,10 @@
   --myneutral-500: #646363;
   --myneutral-550: #838383;
   --myneutral-600: #626262;
+  --myneutral-700: #414141;
   --myneutral-800: #323131;
   --myneutral-850: #262626;
+  --myneutral-900: #282828;
 
   --mygray-100: #eeeff4;
   --mygray-150: #f5f6fa;
@@ -35,6 +39,9 @@
   --mysky-800: #1e54a4;
 
   --myblack-800: #000000;
+
+  /* Fonts */
+  --myfont-sans: 'Montserrat', Arial, sans-serif;
 }
 
 @theme inline {
@@ -44,6 +51,7 @@
   /* Defined Custom Colors */
   --color-myzinc-300: var(--myzinc-300);
   --color-myzinc-100: var(--myzinc-100);
+  --color-myzinc-200: var(--myzinc-200);
   --color-myblue-500: var(--myblue-500);
   --color-myblue-400: var(--myblue-400);
   --color-myblue-300: var(--myblue-300);
@@ -53,10 +61,12 @@
   --color-myneutral-300: var(--myneutral-300);
   --color-myneutral-350: var(--myneutral-350);
   --color-myneutral-600: var(--myneutral-600);
+  --color-myneutral-700: var(--myneutral-700);
   --color-myneutral-400: var(--myneutral-400);
   --color-myneutral-450: var(--myneutral-450);
   --color-myneutral-475: var(--myneutral-475);
   --color-myneutral-850: var(--myneutral-850);
+  --color-myneutral-900: var(--myneutral-900);
   --color-mygray-200: var(--mygray-200);
   --color-mygray-100: var(--mygray-100);
   --color-mygray-150: var(--mygray-150);
@@ -69,89 +79,11 @@
   /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-
-/* 
-  ****************** Navbar.tsx Styles ******************
-*/
-.navbar {
-  display: grid;
-  grid-template-columns: 120px 1fr 160px;
-  align-items: center;
-  background: #262626;
-  padding: 18px 40px;
-  font-family: 'Inter', Arial, sans-serif;
-  position: relative;
-  z-index: 10;
-  width: 100%;
-}
-
-.navbar-logo {
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 1px;
-  justify-self: start;
-  position: relative;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 36px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-}
-
-.navbar-links a {
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.2s;
-}
-
-.navbar-links a:hover {
-  color: #60aaff;
-}
-
-.navbar-btn {
-  background: #4d97ff;
-  color: #fff;
-  border: none;
-  border-radius: 22px;
-  padding: 10px 32px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-  justify-self: end;
-}
-
-.navbar-btn:hover {
-  background: #357ae8;
-}
-
-/* Backgrounds */
-.penny-bg {
-  background-image: url('/penny_background.svg');
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-/* Backgrounds For Navbar */
-#penny-bgNav {
-  background-image: url('/penny_bgNav.svg');
-  background-repeat: repeat;
-  background-size: cover;
+  --font-poppins: var(--font-geist-poppins);
+  --font-barlow: var(--font-geist-barlow);
+  --font-mysans: var(--font-mysans);
 }
 
 /* Hide scrollbar on all screens */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-
-/* globals.css or your relevant CSS file */
-.faq-questionSection {
-  @apply self-stretch py-8 pl-7 mt-6 bg-slate-100 min-h-[100px] rounded-[80px] max-md:pl-5 max-md:max-w-full;
-}

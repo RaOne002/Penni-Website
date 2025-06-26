@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Trap', '-apple-system', 'Roboto', 'Helvetica', 'sans-serif'],
+        sans: ['Trap',  'sans-serif', '-apple-system', 'Roboto', 'Helvetica'],
+        poppins: ['Poppins', 'sans-serif'],
+        barlow: ['Barlow Semi Condensed', 'sans-serif'],
       },
     },
   },

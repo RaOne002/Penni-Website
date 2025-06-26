@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Navbar from '../commonPage/Navbar';
 import HeroSection from '../commonPage/HeroSection';
 import LenderLogos from '../commonPage/LenderLogos';
 import StatisticsSection from '../commonPage/StatisticsSection';
@@ -16,10 +15,7 @@ import Footer from '../commonPage/Footer';
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center bg-white">
-      <div className="w-full block max-md:hidden">
-        <Navbar />
-      </div>
+    <main className="flex flex-col items-center bg-mywhite">
       <HeroSection />
       <LenderLogos />
       <StatisticsSection />

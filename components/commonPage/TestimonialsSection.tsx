@@ -13,12 +13,12 @@ const TestimonialCard = ({
   className?: string;
 }) => (
   <div
-    className={`flex items-center bg-zinc-100 rounded-[100px] min-w-[530px] max-w-[400px] w-full px-2 py-1 gap-6 shadow-sm ${className}`}
+    className={`group flex items-center bg-myzinc-100 rounded-[100px] min-w-[530px] max-w-[400px] w-full px-2 py-1 gap-6 shadow-sm max-md:min-w-[95vw] max-md:max-w-[95vw] max-md:gap-1.5 hover:bg-myneutral-900 hover:text-mywhite transition-colors duration-200 cursor-pointer ${className}`}
   >
-    <div className="flex-shrink-0 bg-blue-500 rounded-full w-40 h-40" />
+    <div className="flex-shrink-0 bg-myblue-500 rounded-full w-40 h-40 max-md:w-32 max-md:h-32" />
     <div>
-      <p className="text-sm md:text-sm text-neutral-800">{text}</p>
-      <p className="mt-4 font-bold text-neutral-800">{author}</p>
+      <p className="text-sm md:text-sm max-md:xs text-myneutral-800 group-hover:text-mywhite">{text}</p>
+      <p className="mt-4 font-bold text-myneutral-800 group-hover:text-mywhite">{author}</p>
     </div>
   </div>
 );
@@ -102,8 +102,8 @@ export default function TestimonialsSection() {
 
   return (
     <section className="w-full px-2 md:px-8 py-8 mt-5">
-      <h2 className="text-3xl md:text-5xl font-bold text-center text-neutral-800 mx-auto mb-12">
-        Don't take it from us. Our best <br /> recommendations come from our customers.
+      <h2 className="text-2xl md:text-5xl font-bold text-center text-myneutral-800 mx-auto mb-12 max-md:font-semibold">
+        Don{"'"}t take it from us. Our best <br className="max-md:hidden" /> recommendations come from our customers.
       </h2>
       <div
         ref={containerRef}
@@ -132,19 +132,25 @@ export default function TestimonialsSection() {
         <button
           aria-label="Scroll left"
           onClick={() => scroll("left")}
-          className="w-12 h-12 rounded-full border border-neutral-300 flex items-center justify-center hover:bg-neutral-100 transition"
+          className="w-24 h-12 rounded-full border border-myneutral-300 flex items-center justify-center bg-mywhite hover:bg-myneutral-100 transition"
         >
-          <svg width="24" height="24" fill="none" stroke="#222" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="15 6 9 12 15 18" />
+          <svg width="36" height="36" fill="none" stroke="#222" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+            {/* Longer arrow line */}
+            <line x1="28" y1="18" x2="10" y2="18" />
+            {/* Arrow head */}
+            <polyline points="16 12 10 18 16 24" />
           </svg>
         </button>
         <button
           aria-label="Scroll right"
           onClick={() => scroll("right")}
-          className="w-12 h-12 rounded-full border border-neutral-300 flex items-center justify-center hover:bg-neutral-100 transition"
+          className="w-24 h-12 rounded-full border border-myneutral-300 flex items-center justify-center bg-mywhite hover:bg-myneutral-100 transition"
         >
-          <svg width="24" height="24" fill="none" stroke="#222" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="9 6 15 12 9 18" />
+          <svg width="36" height="36" fill="none" stroke="#222" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+            {/* Longer arrow line */}
+            <line x1="8" y1="18" x2="26" y2="18" />
+            {/* Arrow head */}
+            <polyline points="20 12 26 18 20 24" />
           </svg>
         </button>
       </div>

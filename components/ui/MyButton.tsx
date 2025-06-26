@@ -13,7 +13,7 @@ interface buttonProps {
 export default function MyButton({
   children = "Click here",
   onClick,
-  className = "",
+  className = "max-md:py-0.5",
   bgColor = "bg-myblue-500",
   hoverBgColor = "hover:bg-mysky-800",
   textColor = "text-mywhite",
