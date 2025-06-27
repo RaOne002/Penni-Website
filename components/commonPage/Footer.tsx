@@ -4,6 +4,8 @@ import React from 'react';
 // import FooterBgSvg from '../svg/FooterBgSvg'
 import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
 import PennyHalfFlowerSvg from '../svg/PennyHalfFlowerSvg'
+// import PennyLogoSvg from '../svg/PennyLogoSvg';
+import Logo from '../svg/Logo';
 // import PennyFlowerSvg3 from '../svg/PennyFlowerSvg3';
 
 export default function Footer() {
@@ -28,10 +30,8 @@ export default function Footer() {
         <div className="mb-8 max-md:mb-6 flex">
           {/* Replace with your logo component or img */}
           <span className="text-mywhite text-2xl font-bold flex items-center gap-2">
-            <span className="w-10 h-10 rounded-full bg-myblue-500 flex items-center justify-center mr-2">
-              {/* Example logo SVG or icon */}
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#222" /><text x="8" y="20" fill="#fff" fontSize="12" fontWeight="bold">LQ</text></svg>
-            </span>
+            {/* <PennyLogoSvg aria-label="Penny Logo" /> */}
+            <Logo aria-label="Penny Logo" />
             LendQ
           </span>
         </div>
