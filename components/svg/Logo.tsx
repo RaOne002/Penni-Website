@@ -2,12 +2,15 @@
 
 import Image from "next/image";
 import React from "react";
+interface LogoProps {
+  className?: string;
+}
 
-const Logo = () => {
+const Logo: React.FC<LogoProps> = ({ className = "" }) => {
   return (
-    <div className="flex items-center justify-center">
+    <div className={`flex items-center justify-center ${className}`}>
       <Image
-        src="/PennyLogo.png" 
+        src="/PennyLogo.png"
         alt="Logo"
         width={52}
         height={54}
