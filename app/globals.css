@@ -13,6 +13,7 @@
   --myblue-400: #78a8ee;
   --myblue-500: #408dfe;
 
+  --myneutral-200: #e1e1e1;
   --myneutral-300: #d9d9d9;
   --myneutral-350: #d1d1d1;
   --myneutral-400: #9f9f9f;
@@ -68,6 +69,7 @@
   --color-myneutral-475: var(--myneutral-475);
   --color-myneutral-850: var(--myneutral-850);
   --color-myneutral-900: var(--myneutral-900);
+  --color-myneutral-200: var(--myneutral-200);
   --color-mygray-200: var(--mygray-200);
   --color-mygray-100: var(--mygray-100);
   --color-mygray-150: var(--mygray-150);

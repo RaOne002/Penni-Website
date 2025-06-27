@@ -46,7 +46,7 @@ export default function Footer() {
                 <br />
                 <a href="/personal-loan" className="hover:underline text-mywhite">Personal Loans</a>
                 <br />
-                <a href="#" className="hover:underline text-mywhite">Consolidation Loans</a>
+                <a href="./consolidation-loans" className="hover:underline text-mywhite">Consolidation Loans</a>
               </div>
             </div>
             <div className="ml-5 w-[39%] max-md:ml-0 max-md:w-full">
@@ -68,11 +68,11 @@ export default function Footer() {
                   About Us{" "}
                 </span>
                 <br />
-                <a href="#" className="hover:underline text-mywhite">Our Clients</a>
+                <a href="./clients" className="hover:underline text-mywhite">Our Clients</a>
                 <br />
-                <a href="#" className="hover:underline text-mywhite">Our process</a>
+                <a href="./process" className="hover:underline text-mywhite">Our process</a>
                 <br />
-                <a href="#" className="hover:underline text-mywhite">Blogs</a>
+                <a href="./resource" className="hover:underline text-mywhite">Blogs</a>
               </div>
             </div>
           </div>

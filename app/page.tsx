@@ -1,5 +1,5 @@
 
-import Page from '@/components/landing/Page';
+import Page from '@/components/landingPage/Page';
 import React from 'react';
 
 export default function Home() {

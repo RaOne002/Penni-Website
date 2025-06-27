@@ -17,13 +17,10 @@ export default function HeroSection() {
         />
         {/* --------- This Header for Big Screens --------- */}
         <div>
-          <h1 className="text-7xl max-md:text-4xl font-bold text-center leading-tight mt-2 z-10 font-sans max-md:pt-20">
-            Personal loans <br /> made easy
+          <h1 className="text-7xl max-md:text-3xl mt-8 font-bold text-center leading-tight mt-2 z-10 font-sans max-md:pt-20">
+            Modern tech meets a personal approach
           </h1>
         </div>
-        <p className="text-center text-xl mt-2 mb-4 max-w-xs sm:max-w-md md:max-w-xl z-10">
-          Apply online, get instant offers and receive your <br /> funds. It{"'"}s that simple.
-        </p>
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ const stats = [
 
 export default function StatisticsSection() {
   return (
-    <section className="p-5 mt-11 w-[70%] bg-mygray-100 rounded-3xl max-w-[1558px] max-md:mt-10 max-md:w-[90%] max-md:max-w-[95vw] mx-auto">
+    <section className="p-5 mt-8 mb-8 w-[70%] bg-mygray-100 rounded-3xl max-w-[1558px] max-md:mt-10 max-md:w-[90%] max-md:max-w-[95vw] mx-auto">
       <div className="flex gap-7 max-lg:flex-col">
         <div className="w-[35%] max-lg:w-full">
           {/* --------- Desktop content --------- */}

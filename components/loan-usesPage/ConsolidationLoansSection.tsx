@@ -7,9 +7,9 @@ import PennyFlowerSvg2 from '../svg/PennyFlowerSvg2';
 import PennyFlowerSvg3 from '../svg/PennyFlowerSvg3'; 
 import MyButton from '../ui/MyButton';
 
-export default function LoanOffersSection() {
+export default function ConsolidationLoansSection() {
   return (
-    <section className="rounded-3xl mb-8 p-3 bg-myneutral-850 w-full max-w-[1500px] max-md:rounded-none">
+    <section className="rounded-3xl p-3 bg-myneutral-850 w-full max-w-[1500px] max-md:rounded-none">
       <div className="relative flex flex-row items-stretch rounded-2xl min-h-[680px] overflow-hidden max-md:flex-col max-md:min-h-0">
   <PennyBgWhiteSvg
     className="object-cover absolute inset-0 size-full"
@@ -37,7 +37,7 @@ export default function LoanOffersSection() {
   {/* Right: Content (will be at top on mobile) */}
   <div className="flex-1 flex flex-col justify-center px-12 py-10 ps-28 max-md:order-first max-md:px-8 max-md:py-6">
     <h2 className="text-mywhite text-5xl font-bold leading-tight mb-6 max-md:text-4xl max-md:mb-4">
-      Get loan offers in as {" "}<br/>little as 60 seconds
+      Consolidation Loans
     </h2>
     <p className="text-mywhite text-xl mb-4 max-md:text-xl max-md:mb-3">
       You deserve options. So we built an<br className="max-md:hidden" />
