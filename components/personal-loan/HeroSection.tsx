@@ -7,9 +7,9 @@ import Navbar from '../commonPage/Navbar';
 export default function HeroSection() {
   return (
     <section
-      className="w-full text-xl h-[760px] font-medium text-mywhite bg-myneutral-850 flex flex-col items-center pt-4 max-md:py-28 max-md:px-3 max-md:pb-20px"
+      className="w-full text-xl h-[760px] font-medium text-mywhite bg-myneutral-850 flex flex-col items-center pt-4 max-md:pb-28 max-md:px-3 max-md:pb-20px"
     >
-      <Navbar className='max-md:hidden'/>
+      <Navbar/>
       <div className="max-w-4xl w-full flex flex-col items-center px-2">
         <PennyBgWhiteSvg
           className="object-cover absolute inset-0 size-full h-[760px]"
@@ -17,7 +17,7 @@ export default function HeroSection() {
         />
         {/* --------- This Header for Big Screens --------- */}
         <div>
-          <h1 className="text-7xl max-md:text-4xl font-bold text-center leading-tight mt-2 z-10 font-sans">
+          <h1 className="text-7xl max-md:text-4xl font-bold text-center leading-tight mt-2 z-10 font-sans max-md:pt-20">
             Personal loans <br /> made easy
           </h1>
         </div>

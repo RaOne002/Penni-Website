@@ -9,7 +9,7 @@ export default function CreditScoreSection() {
         Millions of dollars funded for every credit score
       </h2>
       {/* --------- Toggle buttons for desktop --------- */}
-      <div className="flex relative items-center pr-2 mt-4 text-base font-semibold bg-mywhite border border-solid   border-myneutral-800 rounded-[47px] md:pr-2 md:mt-10 md:text-lg md:w-auto w-full max-w-xs mx-auto max-md:hidden">
+      <div className="flex relative items-center pr-2 mt-4 text-base font-semibold bg-mywhite border border-solid border-myneutral-800 rounded-[47px] md:pr-2 md:mt-10 md:text-lg md:w-auto w-full max-w-xs mx-auto max-lg:hidden">
         <div className="flex z-0 shrink-0 self-stretch my-auto bg-myblue-500 h-10 rounded-[70px] w-[110px] md:h-[62px] md:w-[160px]" />
         <div className="z-0 self-stretch my-auto text-myneutral-800 px-2 max-md:px-0 max-md:pl-1">
           Income Range
@@ -18,7 +18,7 @@ export default function CreditScoreSection() {
           Credit Score
         </div>
       </div>
-      {/* --------- Toggle buttons for mobile --------- */}
+      {/* --------- Toggle buttons for mobile/tablet --------- */}
       <div className="flex relative items-center mt-4 text-base font-semibold w-full max-w-xs mx-auto max-md:text-sm max-md:w-[220px] max-md:mb-5 max-md:bg-myblue-500 max-md:rounded-full lg:hidden">
         {/* Credit Score button (active) */}
         <button
@@ -30,15 +30,14 @@ export default function CreditScoreSection() {
         {/* Income Range button (inactive) */}
         <button
           className="flex-1 h-10 rounded-full bg-mywhite text-myneutral-800 border border-myneutral-800 border-l-0 transition-colors duration-200"
-          
         >
           Income Range
         </button>
       </div>
       <div className="self-stretch px-2 py-4 mt-4 bg-mygray-100 rounded-[20px] md:px-14 md:py-9 md:mt-8 md:rounded-[30px] max-md:bg-transparent">
-        <div className="flex flex-col md:flex-row gap-4 md:gap-5">
-          {/* Chart - mobile: first, desktop: right column */}
-          <div className="order-2 md:order-2 w-full md:w-[60%] max-md:order-1 max-md:mb-10">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-5">
+          {/* Chart - mobile/tablet: first, desktop: right column */}
+          <div className="order-2 lg:order-2 w-full lg:w-[60%] max-lg:order-1 max-lg:mb-10">
             <div className="w-full max-w-3xl mx-auto bg-mygray-200 rounded-2xl py-6 px-2 md:rounded-3xl md:py-10 md:px-8">
               {/* Y-axis labels and grid lines */}
               <div className="relative h-[220px] flex md:h-[420px]">
@@ -71,8 +70,8 @@ export default function CreditScoreSection() {
               </div>
             </div>
           </div>
-          {/* Cards - mobile: after chart, desktop: left column */}
-          <div className="order-1 md:order-1 flex flex-col gap-4 w-full md:w-[40%] max-md:order-2 max-md:mb-8">
+          {/* Cards - mobile/tablet: after chart, desktop: left column */}
+          <div className="order-1 lg:order-1 flex flex-col gap-4 w-full lg:w-[40%] max-lg:order-2 max-lg:mb-8">
             {/* Card 1 */}
             <div className="flex items-center gap-2 px-2 py-3 bg-myblue-500 rounded-2xl w-full md:gap-6 md:px-6 md:py-4 md:rounded-3xl">
               <div className="flex items-center justify-center bg-mywhite rounded w-20 h-14 md:rounded-xs md:w-32 md:h-24">

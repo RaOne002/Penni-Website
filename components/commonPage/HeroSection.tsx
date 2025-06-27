@@ -9,10 +9,10 @@ import Navbar from './Navbar';
 export default function HeroSection() {
   return (
     <section
-      className="w-full text-xl font-medium text-mywhite bg-myneutral-850 flex flex-col items-center pt-4 max-md:py-28 max-md:px-3 max-md:pb-20px"
+      className="w-full text-xl font-medium text-mywhite bg-myneutral-850 flex flex-col items-center pt-4 max-md:pb-28 max-md:px-3 max-md:pb-20px"
     >
-      <Navbar className='max-md:hidden'/>
-      <div className="max-w-4xl w-full flex flex-col items-center px-2">
+      <Navbar />
+      <div className="max-w-4xl w-full flex flex-col items-center px-2 max-md:pt-16">
         <PennyBgWhiteSvg
           className="object-cover absolute inset-0 size-full h-[860px]"
           aria-label="Background"
