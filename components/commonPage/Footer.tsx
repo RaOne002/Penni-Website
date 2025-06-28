@@ -95,10 +95,10 @@ export default function Footer() {
               <div>
                 <a href="#" className="text-base font-bold text-mywhite mb-2 block">Products</a>
                 <a href="/personal-loan" className="text-base text-mywhite mb-1 block hover:underline">Personal Loans</a>
-                <a href="#" className="text-base text-mywhite block hover:underline">Consolidation Loans</a>
+                <a href="./consolidation-loans" className="text-base text-mywhite block hover:underline">Consolidation Loans</a>
               </div>
               <div>
-                <a href="#" className="text-base font-bold text-mywhite mb-2 block">Loan Uses</a>
+                <a href="./loan-uses" className="text-base font-bold text-mywhite mb-2 block">Loan Uses</a>
                 <a href="#" className="text-base text-mywhite mb-1 block hover:underline">Debt Consolidation</a>
                 <a href="#" className="text-base text-mywhite mb-1 block hover:underline">Credit card refinance</a>
                 <a href="#" className="text-base text-mywhite block hover:underline">Large purchases</a>
@@ -106,9 +106,9 @@ export default function Footer() {
             </div>
             <div className='max-md:pb-8'>
               <a href="#" className="text-base font-bold text-mywhite mb-2 block">About Us</a>
-              <a href="#" className="text-base text-mywhite mb-1 block hover:underline">Our Clients</a>
-              <a href="#" className="text-base text-mywhite mb-1 block hover:underline">Our process</a>
-              <a href="#" className="text-base text-mywhite block hover:underline">Blogs</a>
+              <a href="./clients" className="text-base text-mywhite mb-1 block hover:underline">Our Clients</a>
+              <a href="./process" className="text-base text-mywhite mb-1 block hover:underline">Our process</a>
+              <a href="./resource" className="text-base text-mywhite block hover:underline">Blogs</a>
             </div>
           </div>
 
