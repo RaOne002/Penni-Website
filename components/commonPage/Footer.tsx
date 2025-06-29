@@ -1,12 +1,11 @@
 "use client";
 
 import React from 'react';
-// import FooterBgSvg from '../svg/FooterBgSvg'
 import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
 import PennyHalfFlowerSvg from '../svg/PennyHalfFlowerSvg'
-// import PennyLogoSvg from '../svg/PennyLogoSvg';
+import PennyFlowerSvg from '../svg/PennyFlowerSvg';
 import Logo from '../svg/Logo';
-// import PennyFlowerSvg3 from '../svg/PennyFlowerSvg3';
+
 
 export default function Footer() {
   return (
@@ -17,14 +16,14 @@ export default function Footer() {
       />
       {/* Top-right flower for desktop */}
       <PennyHalfFlowerSvg
-        className="absolute right-[0px] top-[70px] w-[110px] z-10 max-md:hidden"
+        className="absolute z-10 right-[-1%] top-5 w-16 h-16 md:w-36 md:h-36 max-md:hidden"
         aria-label="Half Flower"
       />
       {/* Bottom-left flower for mobile */}
-      {/* <PennyFlowerSvg3
-        className="max-md:block hidden absolute z-10 max-md:left-30 max-md:bottom-58"
+      <PennyFlowerSvg
+        className="absolute z-10 right-[0%] top-[51.5%] w-16 h-16 md:w-36 md:h-36 max-md:block hidden"
         aria-label="Half Flower"
-      /> */}
+      />
       <div className="flex relative flex-col w-full max-w-[1602px] max-md:max-w-full">
         {/* Logo */}
         <div className="mb-8 max-md:mb-6 flex">

@@ -2,8 +2,7 @@
 
 import React from 'react';
 import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
-import PennyFlowerSvg2 from '../svg/PennyFlowerSvg2'; 
-import PennyFlowerSvg3 from '../svg/PennyFlowerSvg3'; 
+import PennyFlowerSvg from '../svg/PennyFlowerSvg'; 
 import MyButton from '../ui/MyButton';
 
 export default function PersonalizedOffersSection() {
@@ -15,13 +14,13 @@ export default function PersonalizedOffersSection() {
           aria-label="Background"
         />
         {/* Top-left flower */}
-        <PennyFlowerSvg3
-          className="absolute left-[60px] top-[34px] z-10 max-md:hidden"
+        <PennyFlowerSvg
+          className="absolute z-10 left-[1%] top-1/6 w-12 h-12 md:w-20 md:h-20 max-md:top-1"
           aria-label="Flower"
         />
         {/* Bottom-right flower */}
-        <PennyFlowerSvg2
-          className="absolute right-[650px] bottom-[10px] z-10 max-md:hidden"
+        <PennyFlowerSvg
+          className="absolute z-10 right-[45%] bottom-5 w-20 h-20 md:w-36 md:h-36 max-md:top-[45%] max-md:right-1"
           aria-label="Flower"
         />
         {/* Left: Content */}

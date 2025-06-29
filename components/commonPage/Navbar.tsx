@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface NavbarProps {
   className?: string;
@@ -7,6 +8,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <nav
@@ -107,6 +109,8 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
           hover:bg-mysky-800
           ml-4
         "
+        onClick={() => router.push('')} // /user-form (TODO: Update with actual path)
+        aria-label="Get Started"
       >
         Get Started
       </button>

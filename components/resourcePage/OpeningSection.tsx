@@ -14,11 +14,11 @@ export default function OpeningSection() {
                     aria-label="Background"
                 />
                 <PennyHalfFlowerSvg
-                    className="absolute max-md:w-full scale-x-[-1] max-md:hidden"
+                    className="absolute scale-x-[-1] z-10 left-0 top-0 w-16 h-16 md:w-36 md:h-36"
                     aria-label="Decorative flower"
                 />
                 {/* Section header content */}
-                <div className="absolute top-0 left-0 w-full flex flex-col items-center pt-10 md:pt-16 z-10">
+                <div className="absolute top-0 left-0 w-full flex flex-col items-center pt-10 md:pt-16 z-10 max-md:pt-20">
                     <h2 className="text-mywhite text-xl md:text-5xl font-bold text-center pb-4 md:pb-8">
                         We have open roles!
                     </h2>
