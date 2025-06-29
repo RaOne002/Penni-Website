@@ -13,7 +13,7 @@ export default function LenderLogos() {
         business
       </h2>
       <div className="
-        flex flex-wrap items-center justify-center
+        flex flex-wrap items-center justify-between
         gap-10 md:gap-16 lg:gap-24
         px-2 py-2
         w-full max-w-[1250px]
@@ -22,6 +22,7 @@ export default function LenderLogos() {
         mx-auto
         max-md:rounded-none
         max-md:text-xs
+        
         ">
         <div className="flex flex-col justify-center items-center self-stretch py-2 bg-myneutral-800 rounded-[45px] w-[90px] md:w-[150px] max-md:hidden">
           <LenderLogoSvg className="object-contain aspect-square w-[32px] md:w-[47px]" aria-label="Lender logo" />

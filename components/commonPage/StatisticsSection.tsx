@@ -39,16 +39,16 @@ export default function StatisticsSection() {
             have been funded
           </div>
         </div>
-        <div className="flex justify-center items-center gap-15 w-full max-lg:flex-col max-lg:items-center max-lg:gap-6">
+        <div className="flex flex-wrap justify-between items-center gap-8 md:gap-12 w-full max-lg:flex-col max-lg:items-center max-lg:gap-6">
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center w-1/4 min-w-[120px] max-lg:w-full"
+              className="flex flex-col items-center flex-1 min-w-[140px] max-w-[220px] px-2"
             >
-              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-semibold text-myneutral-800 mt-6 lg:mt-0 text-center font-bold">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-myneutral-800 mt-6 lg:mt-0 text-center">
                 {stat.value}
               </div>
-              <p className="mt-2 text-xl text-myneutral-600 max-lg:text-base text-center">
+              <p className="mt-2 text-base sm:text-lg md:text-xl text-myneutral-600 text-center">
                 {stat.label}
               </p>
             </div>

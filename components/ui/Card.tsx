@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const cards = [
@@ -45,6 +45,7 @@ export default function CardRow() {
     const [hovered, setHovered] = useState<number | null>(0);
     const [opened, setOpened] = useState<number | null>(0);
     const isMobile = useIsMobile();
+    const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
 
     // On mobile, clicking a card opens it
     const handleCardClick = (idx: number) => {
@@ -53,13 +54,25 @@ export default function CardRow() {
         }
     };
 
-    // On desktop, hover logic
+    // On desktop, hover logic with lazy delay
     const handleMouseEnter = (idx: number) => {
-        if (!isMobile) setHovered(idx);
+        if (!isMobile) {
+            if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+            hoverTimeout.current = setTimeout(() => setHovered(idx), 120); // 120ms delay
+        }
     };
     const handleMouseLeave = () => {
-        if (!isMobile) setHovered(0);
+        if (!isMobile) {
+            if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+            hoverTimeout.current = setTimeout(() => setHovered(0), 120); // 120ms delay
+        }
     };
+
+    useEffect(() => {
+        return () => {
+            if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+        };
+    }, []);
 
     return (
         <div className="w-full flex flex-col md:flex-row gap-4 items-end">
@@ -81,9 +94,8 @@ export default function CardRow() {
                         onMouseEnter={() => handleMouseEnter(idx)}
                         onMouseLeave={handleMouseLeave}
                     >
-                        {/* Image placeholder */}
+                        {/* ...existing card content... */}
                         <div className="w-full h-32 relative rounded-t-2xl overflow-hidden flex items-center justify-center">
-                            {/* Uncomment and use when ready: */}
                             {card.imageSrc && (
                                 <Image
                                     src={card.imageSrc}
@@ -92,7 +104,6 @@ export default function CardRow() {
                                     className="object-cover"
                                 />
                             )}
-                            {/* Placeholder icon or text */}
                             <span className="opacity-40 text-3xl"></span>
                         </div>
                         <div className="flex flex-col justify-end h-full">

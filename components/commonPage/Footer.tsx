@@ -9,14 +9,14 @@ import Logo from '../svg/Logo';
 
 export default function Footer() {
   return (
-    <footer className="flex bg-myneutral-850 relative flex-col items-center self-stretch px-16 pt-64 pb-16 w-full min-h-[600px] max-md:px-3 max-md:pt-8 max-md:pb-4 max-md:max-w-full">
+    <footer className="flex bg-myneutral-850 relative flex-col items-center self-stretch pt-64 pb-16 w-full min-h-[600px] max-md:px-3 max-md:pt-8 max-md:pb-4 max-md:max-w-full">
       <PennyBgWhiteSvg
-        className="object-cover absolute inset-0 size-full"
+        className="object-cover absolute inset-0 size-full w-full h-full"
         aria-label="Footer background"
       />
       {/* Top-right flower for desktop */}
       <PennyHalfFlowerSvg
-        className="absolute z-10 right-[-1%] top-5 w-16 h-16 md:w-36 md:h-36 max-md:hidden"
+        className="absolute z-10 right-[0%] top-5 w-16 h-16 md:w-36 md:h-36 max-md:hidden"
         aria-label="Half Flower"
       />
       {/* Bottom-left flower for mobile */}

@@ -95,7 +95,7 @@ export default function CreditScoreSection() {
               <div className="flex items-center justify-center bg-mywhite rounded w-20 h-14 md:rounded-lg md:w-32 md:h-24">
                 <span className="text-xl font-bold text-myblue-500 md:text-3xl">$1.9B+</span>
               </div>
-              <span className="text-base font-medium text-white md:text-lg">
+              <span className="text-base font-medium text-mywhite md:text-lg">
                 Total credit products through our platform
               </span>
             </div>
