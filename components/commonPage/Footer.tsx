@@ -105,7 +105,7 @@ export default function Footer() {
               <div>
                 <a href="./loan-uses" className="text-base font-bold text-mywhite mb-2 block">Loan Uses</a>
                 <a href="/loan-uses?tab=consolidation#consolidation" className="text-base text-mywhite mb-1 block hover:underline">Debt Consolidation</a>
-                <a href="/loan-uses?tab=creditcard#creditcard" className="text-base text-mywhite mb-1 block hover:underline">Credit card refinance</a>
+                <a href="/loan-uses?tab=creditcardrefinancing#creditcardrefinancing" className="text-base text-mywhite mb-1 block hover:underline">Credit card refinance</a>
                 <a href="/loan-uses?tab=largepurchases#largepurchases" className="text-base text-mywhite block hover:underline">Large purchases</a>
               </div>
             </div>
