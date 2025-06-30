@@ -109,7 +109,7 @@ export default function CardRow() {
                         <div className="flex flex-col justify-end h-full">
                             {(isMobile || isOpen) && (
                                 <button
-                                    className="flex items-center justify-between bg-mywhite text-myneutral-900 rounded-full px-6 py-5 m-4 text-2xl font-medium shadow transition hover:bg-myneutral-475"
+                                    className="flex items-center justify-between bg-mywhite text-myneutral-900 rounded-full px-6 py-5 m-4 text-xl font-medium shadow transition hover:bg-myneutral-475"
                                     style={{ minHeight: 48 }}
                                 >
                                     <span>{card.buttonText}</span>
