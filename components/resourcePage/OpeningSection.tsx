@@ -41,10 +41,10 @@ export default function OpeningSection() {
                             with our open roles
                         </div>
                         <MyButton
-                            bgColor="bg-myblack-800"
-                            hoverBgColor="hover:bg-myneutral-900"
-                            textColor="text-mywhite"
-                            iconBgColor="bg-myemerald-400"
+                            bgColor="bg-mywhite"
+                            hoverBgColor="hover:bg-zinc-300"
+                            textColor="text-myblsack-800"
+                            iconBgColor="bg-blue-500"
                         >
                             Join us now
                         </MyButton>

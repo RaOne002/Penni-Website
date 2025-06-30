@@ -88,6 +88,10 @@
   --font-mysans: var(--font-mysans);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Hide scrollbar on all screens */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }

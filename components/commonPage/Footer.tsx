@@ -50,15 +50,15 @@ export default function Footer() {
             </div>
             <div className="ml-5 w-[39%] max-md:ml-0 max-md:w-full">
               <div className="text-3xl font-medium text-mywhite max-md:mt-10">
-                <span style={{ fontWeight: 600, fontSize: "36px" }}>
+                <a href='./loan-uses' style={{ fontWeight: 600, fontSize: "36px" }}>
                   Loan Uses
-                </span>
+                </a>
                 <br />
-                <a href="#" className="hover:underline text-mywhite">Debt Consolidation</a>
+                <a href="/loan-uses?tab=consolidation#consolidation" className="hover:underline text-mywhite">Debt Consolidation</a>
                 <br />
-                <a href="#" className="hover:underline text-mywhite">Credit card refinance</a>
+                <a href="/loan-uses?tab=creditcardrefinancing#creditcardrefinancing" className="hover:underline text-mywhite">Credit card refinance</a>
                 <br />
-                <a href="#" className="hover:underline text-mywhite">Large purchases</a>
+                <a href="/loan-uses?tab=largepurchases#largepurchases" className="hover:underline text-mywhite">Large purchases</a>
               </div>
             </div>
             <div className="ml-5 w-[23%] max-md:ml-0 max-md:w-full">
@@ -76,16 +76,22 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="shrink-0 mt-72 h-px border border-mywhite border-solid max-md:mt-10 max-md:max-w-full max-md:hidden" />
-        <div className="mt-7 flex flex-wrap gap-x-11 gap-y-4 text-xl font-medium text-myneutral-300 max-md:max-w-full max-md:hidden">
-          <a href="#" className="hover:underline">Terms Of Service</a>
-          <a href="#" className="hover:underline">Privacy Policy</a>
-          <a href="#" className="hover:underline">Advertiser Disclosure</a>
-          <a href="#" className="hover:underline">Disclosures</a>
-          <a href="#" className="hover:underline">CA Privacy</a>
-          <a href="#" className="hover:underline">Do Not Sell My Personal Information</a>
-          <a href="#" className="hover:underline">Unsubscribe</a>
+
+        <div className="flex w-full justify-center">
+          <div className="flex w-[90%] items-center justify-center shrink-0 mt-24 h-px border border-mywhite border-solid max-md:mt-10 max-md:max-w-full max-md:hidden" />
         </div>
+        <div className="flex w-full justify-center">
+          <div className="mt-5 flex flex-wrap items-center justify-between w-[90%] gap-x-10 gap-y-4 text-xl font-medium text-myneutral-300 max-md:max-w-full max-md:hidden">
+            <a href="#" className="hover:underline">Terms Of Service</a>
+            <a href="#" className="hover:underline">Privacy Policy</a>
+            <a href="#" className="hover:underline">Advertiser Disclosure</a>
+            <a href="#" className="hover:underline">Disclosures</a>
+            <a href="#" className="hover:underline">CA Privacy</a>
+            <a href="#" className="hover:underline">Do Not Sell My Personal Information</a>
+            <a href="#" className="hover:underline">Unsubscribe</a>
+          </div>
+        </div>
+
         {/* Mobile Footer Links */}
         <div className='max-md:block hidden max-md:mt-5'>
           {/* Links */}

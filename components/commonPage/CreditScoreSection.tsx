@@ -2,6 +2,36 @@
 
 import React, { useState } from 'react';
 
+const creditCards = [
+  {
+    bg: "bg-myblue-500",
+    boxBg: "bg-mywhite",
+    textColor: "text-myblue-500",
+    value: "63M+",
+    desc: "Total loan offers made through our platform",
+    descColor: "text-mywhite",
+    boxRounded: "md:rounded-lg",
+  },
+  {
+    bg: "bg-myemerald-400",
+    boxBg: "bg-myneutral-800",
+    textColor: "text-myemerald-400",
+    value: "14M+",
+    desc: "Total customers funded through our platform",
+    descColor: "text-myneutral-900",
+    boxRounded: "md:rounded-lg",
+  },
+  {
+    bg: "bg-myblue-500",
+    boxBg: "bg-mywhite",
+    textColor: "text-myblue-500",
+    value: "$1.9B+",
+    desc: "Total credit products through our platform",
+    descColor: "text-mywhite",
+    boxRounded: "md:rounded-lg",
+  },
+];
+
 export default function CreditScoreSection() {
   const [activeTab, setActiveTab] = useState<"credit" | "income">("credit");
 
@@ -85,33 +115,19 @@ export default function CreditScoreSection() {
             </div>
             {/* Cards - mobile/tablet: after chart, desktop: left column */}
             <div className="order-1 lg:order-1 flex flex-col gap-4 w-full lg:w-[40%] max-lg:order-2 max-lg:mb-8">
-              {/* Card 1 */}
-              <div className="flex items-center gap-2 px-2 py-3 bg-myblue-500 rounded-2xl w-full md:gap-6 md:px-6 md:py-4 md:rounded-3xl">
-                <div className="flex items-center justify-center bg-mywhite rounded w-20 h-14 md:rounded-xs md:w-32 md:h-24">
-                  <span className="text-xl font-bold text-myblue-500 md:text-3xl">63M+</span>
+              {creditCards.map((card, idx) => (
+                <div
+                  key={idx}
+                  className={`flex items-center gap-2 px-2 py-2 ${card.bg} rounded-2xl w-full md:gap-6 md:px-4 md:py-4 md:rounded-3xl`}
+                >
+                  <div className={`flex items-center justify-center ${card.boxBg} rounded w-20 h-14 ${card.boxRounded} md:w-32 md:h-24`}>
+                    <span className={`text-xl font-bold ${card.textColor} md:text-3xl`}>{card.value}</span>
+                  </div>
+                  <span className={`text-base font-medium ${card.descColor} md:text-lg`}>
+                    {card.desc}
+                  </span>
                 </div>
-                <span className="text-base font-medium text-mywhite md:text-lg">
-                  Total loan offers made through our platform
-                </span>
-              </div>
-              {/* Card 2 */}
-              <div className="flex items-center gap-2 px-2 py-3 bg-myemerald-400 rounded-2xl w-full md:gap-6 md:px-6 md:py-3 md:rounded-2xl">
-                <div className="flex items-center justify-center bg-myneutral-800 rounded w-20 h-14 md:rounded-lg md:w-32 md:h-24">
-                  <span className="text-xl font-bold text-myemerald-400 md:text-3xl">14M+</span>
-                </div>
-                <span className="text-base font-medium text-myneutral-900 md:text-lg">
-                  Total customers funded through our platform
-                </span>
-              </div>
-              {/* Card 3 */}
-              <div className="flex items-center gap-2 px-2 py-3 bg-myblue-500 rounded-2xl w-full md:gap-4 md:px-4 md:py-3 md:rounded-2xl">
-                <div className="flex items-center justify-center bg-mywhite rounded w-20 h-14 md:rounded-lg md:w-32 md:h-24">
-                  <span className="text-xl font-bold text-myblue-500 md:text-3xl">$1.9B+</span>
-                </div>
-                <span className="text-base font-medium text-mywhite md:text-lg">
-                  Total credit products through our platform
-                </span>
-              </div>
+              ))}
             </div>
           </div>
         ) : (
@@ -152,33 +168,19 @@ export default function CreditScoreSection() {
             </div>
             {/* Cards - mobile/tablet: after chart, desktop: left column */}
             <div className="order-1 lg:order-1 flex flex-col gap-4 w-full lg:w-[40%] max-lg:order-2 max-lg:mb-8">
-              {/* Card 1 */}
-              <div className="flex items-center gap-2 px-2 py-3 bg-myblue-500 rounded-2xl w-full md:gap-6 md:px-6 md:py-4 md:rounded-3xl">
-                <div className="flex items-center justify-center bg-mywhite rounded w-20 h-14 md:rounded-xs md:w-32 md:h-24">
-                  <span className="text-xl font-bold text-myblue-500 md:text-3xl">63M+</span>
+              {creditCards.map((card, idx) => (
+                <div
+                  key={idx}
+                  className={`flex items-center gap-2 px-2 py-3 ${card.bg} rounded-2xl w-full md:gap-6 md:px-4 md:py-4 md:rounded-3xl`}
+                >
+                  <div className={`flex items-center justify-center ${card.boxBg} rounded w-20 h-14 ${card.boxRounded} md:w-32 md:h-24`}>
+                    <span className={`text-xl font-bold ${card.textColor} md:text-3xl`}>{card.value}</span>
+                  </div>
+                  <span className={`text-base font-medium ${card.descColor} md:text-lg`}>
+                    {card.desc}
+                  </span>
                 </div>
-                <span className="text-base font-medium text-mywhite md:text-lg">
-                  Total loan offers made through our platform
-                </span>
-              </div>
-              {/* Card 2 */}
-              <div className="flex items-center gap-2 px-2 py-3 bg-myemerald-400 rounded-2xl w-full md:gap-6 md:px-6 md:py-3 md:rounded-2xl">
-                <div className="flex items-center justify-center bg-myneutral-800 rounded w-20 h-14 md:rounded-lg md:w-32 md:h-24">
-                  <span className="text-xl font-bold text-myemerald-400 md:text-3xl">14M+</span>
-                </div>
-                <span className="text-base font-medium text-myneutral-900 md:text-lg">
-                  Total customers funded through our platform
-                </span>
-              </div>
-              {/* Card 3 */}
-              <div className="flex items-center gap-2 px-2 py-3 bg-myblue-500 rounded-2xl w-full md:gap-4 md:px-4 md:py-3 md:rounded-2xl">
-                <div className="flex items-center justify-center bg-mywhite rounded w-20 h-14 md:rounded-lg md:w-32 md:h-24">
-                  <span className="text-xl font-bold text-myblue-500 md:text-3xl">$1.9B+</span>
-                </div>
-                <span className="text-base font-medium text-mywhite md:text-lg">
-                  Total credit products through our platform
-                </span>
-              </div>
+              ))}
             </div>
           </div>
         )}

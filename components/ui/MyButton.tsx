@@ -21,7 +21,7 @@ export default function MyButton({
 }: buttonProps) {
   return (
     <button
-      className={`flex items-center ${bgColor} ${hoverBgColor} ${textColor} rounded-full pl-10 pr-1 py-2 text-base mb-4 transition-colors duration-200 ${className}`}
+      className={`flex items-center justify-between ${bgColor} ${hoverBgColor} ${textColor} rounded-full pl-10 pr-1 py-1 text-base mb-4 transition-colors duration-200 ${className}`}
       onClick={onClick}
     >
       <p className="pr-4">{children}</p>

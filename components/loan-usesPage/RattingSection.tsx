@@ -18,7 +18,9 @@ export default function RattingSection() {
                             With rates starting at 5.99%, how much could you save?
                         </li>
                     </ul>
-                    <MyButton >
+                    <MyButton 
+                    className='z-10 w-60'
+                    >
                         Visit our offers
                     </MyButton>
                 </div>

@@ -5,9 +5,24 @@ import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
 import LenQFlowerSvg from '../svg/LenQFlowerSvg';
 import MyButton from '../ui/MyButton';
 
-export default function ConsolidationLoansSection() {
+type Section = {
+  label: string;
+  header: string;
+  content: string;
+  points?: string[];
+};
+
+interface ConsolidationLoansSectionProps {
+  section: Section;
+}
+
+export default function ConsolidationLoansSection({ section }: ConsolidationLoansSectionProps) {
+
   return (
-    <section className="rounded-3xl p-3 bg-myneutral-850 w-full max-w-[1500px] max-md:rounded-none">
+    <section 
+      id={section.label.toLowerCase().replace(/\s/g, "")}
+      className="rounded-3xl p-3 bg-myneutral-850 w-full max-w-[1500px] max-md:rounded-none"
+    >
       <div className="relative flex flex-row items-stretch rounded-2xl min-h-[680px] overflow-hidden max-md:flex-col max-md:min-h-0">
         <LenQBgWhiteSvg
           className="object-cover absolute inset-0 size-full"
@@ -35,18 +50,18 @@ export default function ConsolidationLoansSection() {
         {/* Right: Content (will be at top on mobile) */}
         <div className="flex-1 flex flex-col justify-center px-12 py-10 ps-28 max-md:order-first max-md:px-8 max-md:py-6">
           <h2 className="text-mywhite text-5xl font-bold leading-tight mb-6 max-md:text-4xl max-md:mb-4">
-            Consolidation Loans
+            {section.header}
           </h2>
           <p className="text-mywhite text-xl mb-4 max-md:text-xl max-md:mb-3">
-            You deserve options. So we built an<br className="max-md:hidden" />
-            industry leading platform to<br className="max-md:hidden" />
-            compete for your business.
+            {section.content}
           </p>
-          <ul className="text-mywhite text-xl mb-8 list-disc list-inside space-y-1 max-md:text-xl max-md:mb-4">
-            <li>Loans up to $100,000</li>
-            <li>APR starting at 5.99%</li>
-            <li>Repayment terms up to 7 years</li>
-          </ul>
+          {section.points && section.points.length > 0 && (
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              {section.points.map((point, idx) => (
+                <li key={idx} className="text-mywhite text-lg">{point}</li>
+              ))}
+            </ul>
+          )}
           <div className='max-md:flex max-md:justify-center max-md:mt-8 z-10'>
             <MyButton
               bgColor="bg-white"

@@ -6,6 +6,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 1870 962"
     width="100%"
     height="100%"
+    preserveAspectRatio="none"
     className={props.className}
     fill="none"
     {...props}
