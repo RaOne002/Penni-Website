@@ -36,7 +36,7 @@ export default function PersonalizedOffersSection() {
             hoverBgColor="hover:bg-myneutral-475"
             textColor="text-myblack"
             iconBgColor="bg-myblue-500"
-            className='z-10 w-60 max-md:pl-7 max-md:py-1 max-md:pr-0'
+            className='z-10 w-56'
           >
             visit our offers
           </MyButton>

@@ -68,7 +68,7 @@ export default function ConsolidationLoansSection({ section }: ConsolidationLoan
               hoverBgColor="hover:bg-zinc-300"
               textColor="text-black"
               iconBgColor="bg-blue-500"
-              className='z-10 w-51 max-md:py-1 max-md:pl-8 max-md:pr-0'
+              className='z-10 w-51'
             >Learn more
             </MyButton>
           </div>
