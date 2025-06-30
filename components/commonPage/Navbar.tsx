@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Logo from '../svg/Logo';
 
 interface NavbarProps {
   className?: string;
@@ -25,14 +26,22 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
     >
       {/* Logo */}
       <div className="text-mywhite text-base md:text-lg tracking-wider flex-shrink-0 z-20">
-        LOGO
+        <div className="mb-8 px-8 max-md:mb-6 flex max-md:px-1">
+          {/* Logo is now larger and wrapped in a link to './' */}
+          <a href="./" className="flex items-center gap-1">
+            <span className="text-mywhite text-4xl font-bold flex items-center gap-1">
+              <Logo aria-label="LenQ Logo" className="w-14 h-14" />
+              LenQ
+            </span>
+          </a>
+        </div>
       </div>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 lg:gap-9 list-none m-0 p-0 justify-center flex-1">
         <li className="relative group">
           <a
-            href="./"
+            href="#"
             className="text-mywhite font-semibold no-underline text-base transition-colors duration-200 hover:text-myblue-500"
           >
             Products
@@ -129,6 +138,13 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="fixed inset-0 bg-myblack-800 z-40 flex flex-col items-center justify-center md:hidden transition-all">
+          {/* Logo at the top of mobile menu */}
+          <div className="absolute top-4 left-4 flex items-center gap-2">
+            <a href="./" className="flex items-center gap-2">
+              <Logo aria-label="LenQ Logo" className="w-12 h-12" />
+              <span className="text-mywhite text-3xl font-bold">LenQ</span>
+            </a>
+          </div>
           <button
             className="absolute top-4 right-4 text-mywhite text-3xl"
             onClick={() => setMenuOpen(false)}
@@ -138,7 +154,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
           </button>
           <ul className="flex flex-col gap-8 text-center">
             <li>
-              <a href="./" className="text-mywhite font-semibold text-xl">Products</a>
+              <a href="#" className="text-mywhite font-semibold text-xl">Products</a>
               <ul className="mt-2">
                 <li>
                   <Link

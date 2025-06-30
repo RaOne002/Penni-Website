@@ -39,7 +39,7 @@ export default function HeroSection() {
           Meet LenQ - the first digital finance company built to serve everyone.
           We never sell your information. Easily borrow up to $100,000. Low rates starting at 5.99%.
         </p>
-        <MyButton className='z-10'>
+        <MyButton className='z-10 w-60'>
           Check my rate
         </MyButton>
         <div className="bg-myzinc-300 w-[220px] h-[220px] mt-4 md:w-[350px] md:h-[300px] z-10" />

@@ -45,6 +45,7 @@ export default function OpeningSection() {
                             hoverBgColor="hover:bg-zinc-300"
                             textColor="text-myblsack-800"
                             iconBgColor="bg-blue-500"
+                            className="z-10 w-60"
                         >
                             Join us now
                         </MyButton>

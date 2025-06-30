@@ -26,13 +26,14 @@ export default function Footer() {
       />
       <div className="flex relative flex-col w-full max-w-[1602px] max-md:max-w-full">
         {/* Logo */}
-        <div className="mb-8 max-md:mb-6 flex">
-          {/* Replace with your logo component or img */}
-          <span className="text-mywhite text-2xl font-bold flex items-center gap-2">
-            {/* <LenQLogoSvg aria-label="LenQ Logo" /> */}
-            <Logo aria-label="LenQ Logo" />
-            LendQ
-          </span>
+        <div className="mb-8 px-8 max-md:mb-6 flex">
+          {/* Logo is now larger and wrapped in a link to './' */}
+          <a href="./" className="flex items-center gap-1">
+            <span className="text-mywhite text-4xl font-bold flex items-center gap-1">
+              <Logo aria-label="LenQ Logo" className="w-14 h-14" />
+              LenQ
+            </span>
+          </a>
         </div>
         {/* Desktop Footer Links */}
         <div className="self-end mr-10 max-w-full w-[90%] flex justify-end max-md:mr-2.5 max-md:hidden">
@@ -98,7 +99,7 @@ export default function Footer() {
           <div className='max-md:pl-8 cursor-pointer'>
             <div className="flex flex-row justify-between gap-8 max-md:flex-row max-md:gap-15 max-md:pb-8">
               <div>
-                <a href="./" className="text-base font-bold text-mywhite mb-2 block">Products</a>
+                <a href="#" className="text-base font-bold text-mywhite mb-2 block">Products</a>
                 <a href="/personal-loan" className="text-base text-mywhite mb-1 block hover:underline">Personal Loans</a>
                 <a href="./consolidation-loans" className="text-base text-mywhite block hover:underline">Consolidation Loans</a>
               </div>
