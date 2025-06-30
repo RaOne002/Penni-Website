@@ -53,7 +53,7 @@ export default function LoanOffersSection() {
               hoverBgColor="hover:bg-zinc-300"
               textColor="text-black"
               iconBgColor="bg-blue-500"
-              className='z-10 w-51'
+              className='z-10 w-56'
             >Learn more
             </MyButton>
           </div>
