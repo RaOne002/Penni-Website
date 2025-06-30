@@ -1,19 +1,19 @@
 "use client";
 
 import React from "react";
-import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
-import PennyHalfFlowerSvg from '../svg/PennyHalfFlowerSvg';
+import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
+import LenQHalfFlowerSvg from '../svg/LenQHalfFlowerSvg';
 import MyButton from "../ui/MyButton";
 
 export default function OpeningSection() {
     return (
         <section className="rounded-3xl pb-6 my-8 p-3 bg-myblue-500 w-full max-w-[1500px] max-md:rounded-none">
             <div className="relative flex flex-row items-stretch rounded-2xl min-h-[250px] overflow-hidden max-md:flex-col">
-                <PennyBgWhiteSvg
+                <LenQBgWhiteSvg
                     className="object-cover absolute inset-0 size-full"
                     aria-label="Background"
                 />
-                <PennyHalfFlowerSvg
+                <LenQHalfFlowerSvg
                     className="absolute scale-x-[-1] z-10 left-0 top-0 w-16 h-16 md:w-36 md:h-36"
                     aria-label="Decorative flower"
                 />

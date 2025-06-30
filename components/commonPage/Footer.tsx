@@ -1,26 +1,26 @@
 "use client";
 
 import React from 'react';
-import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
-import PennyHalfFlowerSvg from '../svg/PennyHalfFlowerSvg'
-import PennyFlowerSvg from '../svg/PennyFlowerSvg';
+import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
+import LenQHalfFlowerSvg from '../svg/LenQHalfFlowerSvg'
+import LenQFlowerSvg from '../svg/LenQFlowerSvg';
 import Logo from '../svg/Logo';
 
 
 export default function Footer() {
   return (
     <footer className="flex bg-myneutral-850 relative flex-col items-center self-stretch pt-64 pb-16 w-full min-h-[600px] max-md:px-3 max-md:pt-8 max-md:pb-4 max-md:max-w-full">
-      <PennyBgWhiteSvg
+      <LenQBgWhiteSvg
         className="object-cover absolute inset-0 size-full w-full h-full"
         aria-label="Footer background"
       />
       {/* Top-right flower for desktop */}
-      <PennyHalfFlowerSvg
+      <LenQHalfFlowerSvg
         className="absolute z-10 right-[0%] top-5 w-16 h-16 md:w-36 md:h-36 max-md:hidden"
         aria-label="Half Flower"
       />
       {/* Bottom-left flower for mobile */}
-      <PennyFlowerSvg
+      <LenQFlowerSvg
         className="absolute z-10 right-[0%] top-[51.5%] w-16 h-16 md:w-36 md:h-36 max-md:block hidden"
         aria-label="Half Flower"
       />
@@ -29,8 +29,8 @@ export default function Footer() {
         <div className="mb-8 max-md:mb-6 flex">
           {/* Replace with your logo component or img */}
           <span className="text-mywhite text-2xl font-bold flex items-center gap-2">
-            {/* <PennyLogoSvg aria-label="Penny Logo" /> */}
-            <Logo aria-label="Penny Logo" />
+            {/* <LenQLogoSvg aria-label="LenQ Logo" /> */}
+            <Logo aria-label="LenQ Logo" />
             LendQ
           </span>
         </div>

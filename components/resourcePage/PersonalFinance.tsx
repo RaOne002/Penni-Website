@@ -14,7 +14,7 @@ export default function PersonalFinance() {
                 </div>
                 <div className="w-full border-1 bg-myblack-800 md:w-0 md:bg-myblack-800 md:mr-8" />
                 <div className="text-myblack-800 text-xs sm:text-sm md:text-base lg:text-xl md:font-semibold w-full md:w-[60%]">
-                    Founded in 2022, Pennie Financial helps consumers navigate their financial lives through education and smart product matching. Unlike existing marketplaces, Pennie provides clarity and education to guide better financial decisions.
+                    Founded in 2022, LenQ Financial helps consumers navigate their financial lives through education and smart product matching. Unlike existing marketplaces, LenQ provides clarity and education to guide better financial decisions.
                 </div>
                 {/* Decorative icon */}
             </div>

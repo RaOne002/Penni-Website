@@ -1,30 +1,30 @@
 "use client";
 
 import React from 'react';
-import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
-import PennyFlowerSvg from '../svg/PennyFlowerSvg';
+import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
+import LenQFlowerSvg from '../svg/LenQFlowerSvg';
 import MyButton from '../ui/MyButton';
 
 export default function ConsolidationLoansSection() {
   return (
     <section className="rounded-3xl p-3 bg-myneutral-850 w-full max-w-[1500px] max-md:rounded-none">
       <div className="relative flex flex-row items-stretch rounded-2xl min-h-[680px] overflow-hidden max-md:flex-col max-md:min-h-0">
-        <PennyBgWhiteSvg
+        <LenQBgWhiteSvg
           className="object-cover absolute inset-0 size-full"
           aria-label="Background"
         />
         {/* Top-left flower for desktop */}
-        <PennyFlowerSvg
+        <LenQFlowerSvg
           className="absolute z-10 left-[38%] top-5 w-16 h-16 md:w-36 md:h-36 max-md:hidden"
           aria-label="Flower"
         />
         {/* Bottom-right flower for desktop */}
-        <PennyFlowerSvg
+        <LenQFlowerSvg
           className="absolute z-10 right-1/12 bottom-5 w-12 h-12 md:w-32 md:h-32 max-md:hidden"
           aria-label="Flower"
         />
         {/* Flower for mobile screen */}
-        <PennyFlowerSvg
+        <LenQFlowerSvg
           className="absolute z-10 right-[2%] top-[45%] w-24 h-24 max-md:block hidden"
           aria-label="Flower"
         />

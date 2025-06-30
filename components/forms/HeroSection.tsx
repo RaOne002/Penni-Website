@@ -1,13 +1,13 @@
 import * as React from "react";
 import { FeatureCard } from "./FeatureCard";
-import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
+import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
 
 export const HeroSection: React.FC = () => {
     return (
         <aside className="overflow-hidden grow w-full bg-myneutral-850 max-md:mt-10 max-md:max-w-full">
             <div className="flex relative flex-col pt-32 md:pt-44 pb-10 md:pb-20 w-full min-h-[480px] md:min-h-[800px] lg:min-h-[1080px] max-md:max-w-full">
                 <div className="absolute top-0 left-0 w-full h-full">
-                    <PennyBgWhiteSvg className="w-full h-full object-cover" />
+                    <LenQBgWhiteSvg className="w-full h-full object-cover" />
                 </div>
                 <div className="flex relative flex-col gap-6 self-start w-full px-4 md:px-12">
                     <div className="grow shrink-0 basis-0 w-full max-w-xl">

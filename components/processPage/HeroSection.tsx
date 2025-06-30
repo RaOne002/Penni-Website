@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg'; 
+import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg'; 
 import Navbar from '../commonPage/Navbar';
 
 export default function HeroSection() {
@@ -11,7 +11,7 @@ export default function HeroSection() {
     >
       <Navbar/>
       <div className="max-w-4xl w-full flex flex-col items-center px-2">
-        <PennyBgWhiteSvg
+        <LenQBgWhiteSvg
           className="object-cover absolute inset-0 size-full h-[760px]"
           aria-label="Background"
         />

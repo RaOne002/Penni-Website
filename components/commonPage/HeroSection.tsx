@@ -3,7 +3,7 @@
 import React from 'react';
 import MyButton from '../ui/MyButton';
 import WorldLogoSvg from '../svg/WorldLogoSvg'
-import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg'; 
+import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg'; 
 import Navbar from './Navbar';
 
 export default function HeroSection() {
@@ -13,7 +13,7 @@ export default function HeroSection() {
     >
       <Navbar />
       <div className="max-w-4xl w-full flex flex-col items-center px-2 max-md:pt-16">
-        <PennyBgWhiteSvg
+        <LenQBgWhiteSvg
           className="object-cover absolute inset-0 size-full h-[860px]"
           aria-label="Background"
         />
@@ -53,7 +53,7 @@ export default function HeroSection() {
           
         </div>
         <p className="text-center text-base mt-2 mb-4 max-w-xs sm:max-w-md md:max-w-xl z-10">
-          Meet Pennie - the first digital finance company built to serve everyone.
+          Meet LenQ - the first digital finance company built to serve everyone.
           We never sell your information. Easily borrow up to $100,000. Low rates starting at 5.99%.
         </p>
         <MyButton className='z-10'>

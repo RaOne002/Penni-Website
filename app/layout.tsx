@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Penni - Websites",
+  title: "LenQ - Websites",
   description: "Get personalized loan offers in 60 seconds",
 };
 

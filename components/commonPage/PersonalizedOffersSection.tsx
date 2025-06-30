@@ -1,25 +1,25 @@
 "use client";
 
 import React from 'react';
-import PennyBgWhiteSvg from '../svg/PennyBgWhiteSvg';
-import PennyFlowerSvg from '../svg/PennyFlowerSvg'; 
+import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
+import LenQFlowerSvg from '../svg/LenQFlowerSvg'; 
 import MyButton from '../ui/MyButton';
 
 export default function PersonalizedOffersSection() {
   return (
     <section className="rounded-3xl p-3 bg-myneutral-850 w-full max-w-[1500px] max-md:rounded-none">
       <div className="relative flex flex-row items-stretch rounded-2xl min-h-[700px] overflow-hidden max-md:flex-col max-md:min-h-0">
-        <PennyBgWhiteSvg
+        <LenQBgWhiteSvg
           className="object-cover absolute inset-0 size-full"
           aria-label="Background"
         />
         {/* Top-left flower */}
-        <PennyFlowerSvg
+        <LenQFlowerSvg
           className="absolute z-10 left-[1%] top-1/6 w-12 h-12 md:w-20 md:h-20 max-md:top-1"
           aria-label="Flower"
         />
         {/* Bottom-right flower */}
-        <PennyFlowerSvg
+        <LenQFlowerSvg
           className="absolute z-10 right-[45%] bottom-5 w-20 h-20 md:w-36 md:h-36 max-md:top-[45%] max-md:right-1"
           aria-label="Flower"
         />

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const faqs = [
   {
-    question: "How is Pennie different than other lenders?",
-    answer: "Pennie offers a unique platform that matches you with multiple lenders, increasing your chances of approval and better rates."
+    question: "How is LenQ different than other lenders?",
+    answer: "LenQ offers a unique platform that matches you with multiple lenders, increasing your chances of approval and better rates."
   },
   {
     question: "How do I get offers?",
