@@ -98,7 +98,7 @@ export default function Footer() {
           <div className='max-md:pl-8 cursor-pointer'>
             <div className="flex flex-row justify-between gap-8 max-md:flex-row max-md:gap-15 max-md:pb-8">
               <div>
-                <a href="#" className="text-base font-bold text-mywhite mb-2 block">Products</a>
+                <a href="./" className="text-base font-bold text-mywhite mb-2 block">Products</a>
                 <a href="/personal-loan" className="text-base text-mywhite mb-1 block hover:underline">Personal Loans</a>
                 <a href="./consolidation-loans" className="text-base text-mywhite block hover:underline">Consolidation Loans</a>
               </div>
