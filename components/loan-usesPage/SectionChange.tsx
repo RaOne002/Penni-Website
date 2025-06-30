@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import LenderLogos from "./LenderLogo";
 import ConsolidationLoansSection from "./ConsolidationLoansSection";
@@ -46,7 +46,7 @@ const sections = [
   }
 ];
 
-export default function LoanUsesPage() {
+function LoanUsesPageInner() {
   const searchParams = useSearchParams();
   const tabParam = searchParams?.get("tab");
   const initialIdx = tabParam
@@ -74,5 +74,13 @@ export default function LoanUsesPage() {
         section={sections[activeIdx]}
       />
     </div>
+  );
+}
+
+export default function LoanUsesPage() {
+  return (
+    <Suspense>
+      <LoanUsesPageInner />
+    </Suspense>
   );
 }
