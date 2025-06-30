@@ -17,7 +17,7 @@ export default function HeroSection() {
         />
         {/* --------- This Header for Big Screens --------- */}
         <div>
-          <h1 className="text-7xl max-md:text-3xl mt-8 font-bold text-center leading-tight mt-2 z-10 font-sans max-md:pt-20">
+          <h1 className="text-7xl max-md:text-3xl mt-8 font-bold text-center leading-tight z-10 font-sans max-md:pt-20">
             Modern tech meets a personal approach
           </h1>
         </div>
