@@ -27,52 +27,52 @@ const TestimonialCard = ({
 const testimonials = [
   {
     id: 1,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 2,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 3,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 4,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 5,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 6,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 7,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 8,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 9,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
   {
     id: 10,
-    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered.",
+    text: "The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism.",
     author: "-Kanye West",
   },
 ];
