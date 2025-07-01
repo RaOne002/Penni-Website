@@ -23,6 +23,7 @@
   --myneutral-550: #838383;
   --myneutral-600: #626262;
   --myneutral-700: #414141;
+  --myneutral-750: #343434;
   --myneutral-800: #323131;
   --myneutral-850: #262626;
   --myneutral-900: #282828;
@@ -64,6 +65,7 @@
   --color-myneutral-350: var(--myneutral-350);
   --color-myneutral-600: var(--myneutral-600);
   --color-myneutral-700: var(--myneutral-700);
+  --color-myneutral-750: var(--myneutral-750);
   --color-myneutral-400: var(--myneutral-400);
   --color-myneutral-450: var(--myneutral-450);
   --color-myneutral-475: var(--myneutral-475);
