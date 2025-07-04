@@ -118,7 +118,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
           hover:bg-mysky-800
           ml-4
         "
-        onClick={() => router.push('')} // /user-form (TODO: Update with actual path)
+        onClick={() => router.push('/user-form')}
         aria-label="Get Started"
       >
         Get Started

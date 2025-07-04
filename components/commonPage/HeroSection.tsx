@@ -5,8 +5,11 @@ import MyButton from '../ui/MyButton';
 import WorldLogoSvg from '../svg/WorldLogoSvg'
 import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
 import Navbar from './Navbar';
+import { useRouter } from "next/navigation";
 
 export default function HeroSection() {
+  const router = useRouter();
+
   return (
     <section
       className="relative min-h-dvh w-full text-xl font-medium text-mywhite bg-myneutral-850 flex flex-col items-center pt-4 max-md:pb-28 max-md:px-3 max-md:pb-20px"
@@ -39,7 +42,7 @@ export default function HeroSection() {
           Meet LenQ - the first digital finance company built to serve everyone.
           We never sell your information. Easily borrow up to $100,000. Low rates starting at 5.99%.
         </p>
-        <MyButton className='z-10 w-60'>
+        <MyButton className='z-10 w-60' onClick={() => router.push("/user-form")}>
           Check my rate
         </MyButton>
         <div className="bg-myzinc-300 w-[220px] h-[220px] mt-4 md:w-[350px] md:h-[300px] z-10" />

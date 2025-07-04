@@ -4,8 +4,11 @@ import React from "react";
 import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
 import LenQHalfFlowerSvg from '../svg/LenQHalfFlowerSvg';
 import MyButton from "../ui/MyButton";
+import { useRouter } from "next/navigation";
 
 export default function OpeningSection() {
+    const router = useRouter();
+
     return (
         <section className="rounded-3xl pb-6 my-8 bg-myblue-500 w-full max-w-[1500px] max-md:rounded-none">
             <div className="relative flex flex-row items-stretch rounded-2xl min-h-[250px] overflow-hidden max-md:flex-col">
@@ -46,6 +49,7 @@ export default function OpeningSection() {
                             textColor="text-myblsack-800"
                             iconBgColor="bg-blue-500"
                             className="z-10 w-60"
+                            onClick={() => router.push("/user-form")}
                         >
                             Join us now
                         </MyButton>

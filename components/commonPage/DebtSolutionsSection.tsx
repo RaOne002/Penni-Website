@@ -4,9 +4,12 @@ import React from 'react';
 import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg'; 
 import MyButton from '../ui/MyButton';
 import Card from '../ui/Card';
+import { useRouter } from "next/navigation";
 // import CardCarousel from '../ui/CardCarousel';
 
 export default function DebtSolutionsSection() {
+  const router = useRouter();
+
   return (
     <section className="overflow-hidden mt-15 w-full rounded-3xl bg-myneutral-850 max-w-[1500px] max-md:mt-10 max-md:max-w-full max-md:rounded-none max-md:px-5">
       <div className="flex relative flex-col px-16 py-12 w-full min-h-[680px] max-md:px-5 max-md:max-w-full">
@@ -30,6 +33,7 @@ export default function DebtSolutionsSection() {
               hoverBgColor="hover:bg-myneutral-475"
               textColor="text-myblack"
               iconBgColor="bg-myblue-500"
+              onClick={() => router.push("./loan-uses")}
             >
               Learn more
             </MyButton>
@@ -45,6 +49,7 @@ export default function DebtSolutionsSection() {
               hoverBgColor="hover:bg-myneutral-475"
               textColor="text-myblack"
               iconBgColor="bg-myblue-500"
+              onClick={() => router.push("/loan-uses")}
             >
               Learn more
             </MyButton>

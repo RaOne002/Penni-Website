@@ -4,8 +4,11 @@ import React from 'react';
 import LenQBgWhiteSvg from '../svg/LenQBgWhiteSvg';
 import LenQFlowerSvg from '../svg/LenQFlowerSvg';
 import MyButton from '../ui/MyButton';
+import { useRouter } from "next/navigation";
 
 export default function LoanOffersSection() {
+  const router = useRouter();
+
   return (
     <section className="rounded-3xl mb-8 p-3 bg-myneutral-850 w-full max-w-[1500px] max-md:rounded-none">
       <div className="relative flex flex-row items-stretch rounded-2xl min-h-[680px] overflow-hidden max-md:flex-col max-md:min-h-0">
@@ -54,6 +57,7 @@ export default function LoanOffersSection() {
               textColor="text-black"
               iconBgColor="bg-blue-500"
               className='z-10 w-56'
+              onClick={() => router.push("/user-form")}
             >Learn more
             </MyButton>
           </div>

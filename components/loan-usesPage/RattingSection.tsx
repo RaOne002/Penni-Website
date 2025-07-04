@@ -1,7 +1,10 @@
 "use client";
 import MyButton from '../ui/MyButton';
+import { useRouter } from "next/navigation";
 
 export default function RattingSection() {
+    const router = useRouter();
+    
     return (
         <section className="px-8 py-14 my-5 bg-mygray-150 w-[95%] max-w-[1500px] max-md:px-4 max-md:pt-8 max-md:pb-10">
             <div className="flex gap-8 justify-center items-center max-md:flex-col">
@@ -20,6 +23,7 @@ export default function RattingSection() {
                     </ul>
                     <MyButton 
                     className='z-10 w-60'
+                    onClick={() => router.push("/user-form")}
                     >
                         Visit our offers
                     </MyButton>
