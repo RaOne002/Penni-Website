@@ -65,7 +65,7 @@ export default function FormSection({
         </div>
         <button
           className="w-full py-3 rounded-lg bg-myblue-500 text-mywhite font-semibold text-lg hover:bg-mysky-800 transition"
-          onClick={() => {/* handle submit or next action here */}}
+          onClick={() => {/* handle submit or next action here */ }}
         >
           Agree and view offers
         </button>
@@ -254,6 +254,7 @@ export default function FormSection({
           </label>
           <input
             type="number"
+            min={0}
             className="w-full bg-myneutral-300 rounded-md px-4 py-4 text-lg mb-6 focus:outline-none"
             placeholder={current.placeholder}
             value={answers[current.id] || ""}
@@ -528,6 +529,9 @@ export default function FormSection({
                 value={answers[`${current.id}_4`] || ""}
                 onChange={e => handleChange(e, `${current.id}_4`)}
                 required
+                pattern="\d{10}"
+                maxLength={10}
+                minLength={10}
               />
             </div>
           </div>
